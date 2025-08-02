@@ -1,4 +1,3 @@
-// Skeleton entry point for tic-tac-toe console app
 #include <iostream>
 
 int main() {
