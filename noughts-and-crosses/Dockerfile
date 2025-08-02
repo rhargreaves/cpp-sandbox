@@ -1,5 +1,4 @@
-# Use official C++ build image
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 RUN apt-get update && \
     apt-get install -y build-essential cmake && \
@@ -11,4 +10,4 @@ COPY . /app
 RUN cmake -S . -B build && \
     cmake --build build
 
-CMD ["./build/tic_tac_toe"]
+CMD ["./build/noughts_and_crosses"]
