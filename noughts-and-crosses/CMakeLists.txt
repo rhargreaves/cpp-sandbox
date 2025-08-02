@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(tic_tac_toe)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_executable(tic_tac_toe src/main.cpp)
+target_include_directories(tic_tac_toe PRIVATE include)
