@@ -1,2 +1,2 @@
-# cpp-sandbox
+# C++ Sandbox
 Messing around with C++
