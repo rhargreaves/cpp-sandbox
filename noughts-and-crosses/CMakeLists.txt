@@ -11,7 +11,7 @@ add_library(noughts_and_crosses_lib
 )
 target_include_directories(noughts_and_crosses_lib PUBLIC include)
 add_executable(noughts-and-crosses src/main.cpp)
-target_include_directories(noughts-and-crosses PRIVATE noughts_and_crosses_lib)
+target_link_libraries(noughts-and-crosses PRIVATE noughts_and_crosses_lib)
 
 # unit tests
 include(FetchContent)
