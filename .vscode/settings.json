@@ -1,0 +1,6 @@
+{
+	"C_Cpp.default.cppStandard": "c++23",
+	"files.associations": {
+		"tuple": "cpp"
+	}
+}
