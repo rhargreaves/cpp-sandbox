@@ -1,13 +1,8 @@
-FROM ubuntu:24.04
-
-RUN apt-get update && \
-    apt-get install -y build-essential cmake && \
-    rm -rf /var/lib/apt/lists/*
-
+FROM alpine:latest
+RUN apk add --no-cache build-base cmake
 WORKDIR /app
 COPY . /app
 
-RUN cmake -S . -B build && \
-    cmake --build build
+RUN ./build-and-test.sh
 
-CMD ["./build/noughts_and_crosses"]
+CMD ["./build/noughts-and-crosses"]

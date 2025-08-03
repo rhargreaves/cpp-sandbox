@@ -1,7 +1,0 @@
-build/
-CMakeFiles/
-CMakeCache.txt
-*.o
-*.obj
-*.exe
-*.out
